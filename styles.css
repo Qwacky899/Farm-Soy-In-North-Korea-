@@ -1,0 +1,116 @@
+.Nav {
+          background-color: rgba(0, 0, 0, 0.5); 
+          position: fixed; 
+          top: 20px; 
+          left: 50%; 
+          transform: translateX(-50%); 
+          width: 96%; 
+          max-width: none; 
+          z-index: 1000; 
+          overflow: hidden;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 60px; 
+          border-radius: 12px; 
+        }
+
+        .NavLeft {
+          display: flex;
+          align-items: center;
+        }
+
+        .NavRight {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+        }
+
+        .NavLeft h1 {
+          color: rgb(255, 255, 255); 
+          padding: 0 16px;
+          font-size: 28px;
+          font-weight: 800;
+          letter-spacing: 0.5px;
+        }
+
+        .NavLeft img {
+          margin-left: 10px;
+          height: 40px; 
+        }
+
+        .NavRight a {
+          display: inline-block;
+          color: #f2f2f2; 
+          text-align: center;
+          padding: 18px 16px; 
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 1.05em;
+        }
+
+        .NavRight a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+
+        .NavRight a.active {
+          background-color: #D93848; 
+          color: white;
+        }
+
+        body {
+          font-family: "Inter", sans-serif;
+          background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url('FarmSoy.png');
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed; 
+          margin: 0; 
+        }
+
+        .hero-section {
+          margin-top: 100px; 
+          height: calc(100vh - 100px); 
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          color: white;
+        }
+
+        .hero-section h1 {
+            font-size: 5em;
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-shadow: 0 0 15px rgba(0, 0, 0, 1), 0 0 5px #D93848;
+        }
+
+        .hero-section img {
+          display: none;
+        }
+
+        .cta-button {
+          background-color: #D93848; 
+          color: white;
+          padding: 20px 40px; 
+          font-size: 2em; 
+          font-weight: 800;
+          border: none;
+          border-radius: 15px; 
+          cursor: pointer;
+          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+          transition: background-color 0.3s ease, transform 0.1s ease;
+          margin-top: 30px; 
+          text-decoration: none;
+        }
+
+        .cta-button:hover {
+          background-color: #BA2F3C; 
+          transform: translateY(-2px); 
+        }
+
+        .cta-button:active {
+          background-color: #9C2532; 
+          transform: translateY(0); 
+        }
